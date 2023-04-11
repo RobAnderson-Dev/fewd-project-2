@@ -3,49 +3,111 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- INSERT GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <title>Responsive Website</title>
     </head>
     <body>
         <header>
             <nav>
-                <h1><a href="#">Rob Anderson</a></h1>
+                <h1>Rob Anderson</h1>
                 <ul class="top-nav">
                     <li><a href="#">home</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
+            <div class="intro">
+                <img src="images/profile.jpeg" alt="Rob's profile picture" class="intro-img">
+                <p class="intro-txt">Hi, friends. I'm a junior developer. I recently finished a front-end web development techdegree with Treehouse where I now study back-end development. I'm also currently learning about smart contracts with LearnWeb3 DAO.</p>
+            </div>
         </header>
-        <main class="container">
-            <div class="col box-1">
-                <p>Box 1</p>
+        <main>
+            <h4 class="section-title" id="skills">skills</h4>
+            <div class="col skills-placard">
+                <ul class="skills-list">
+                    <li>html/css</li>
+                    <li>responsive design</li>
+                    <li>javascript</li>
+                    <li>web3</li>
+                    <li>solidity</li>
+                    <li>dApp development</li>
+                </ul>
             </div>
-            <div class="col box-2">
-                <p>Box 2</p>
-            </div>
-            <div class="col box-3">
-                <p>Box 3</p>
-            </div>
-            <div class="col box-4">
-                <p>Box 4</p>
-            </div>
-            <div class="col box-5">
-                <p>Box 5</p>
-            </div>
-            <div class="col box-6">
-                <p>Box 6</p>
+            <h4 class="section-title" id="portfolio">portfolio</h4>
+            <div class="container">
+                <div class="col">
+                    <img src="images/portfolio-1.png" alt="" class="portfolio-img">
+                    <div class="project-placard">
+                        <h3 class="project-title">Marketing Page</h3>
+                        <p>Front page for a business website.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/portfolio-2.png" alt="" class="portfolio-img">
+                    <div class="project-placard">
+                        <h3 class="project-title">Search Page</h3>
+                        <p>Searches a database for user queries.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/portfolio-3.png" alt="" class="portfolio-img">
+                    <div class="project-placard">
+                        <h3 class="project-title">Travel App</h3>
+                        <p>Compare transporation method travel times.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/portfolio-4.png" alt="" class="portfolio-img">
+                    <div class="project-placard">
+                        <h3 class="project-title">Favorites Map</h3>
+                        <p>Uses mapping apis to pin favorite spots in the city.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/portfolio-5.png" alt="" class="portfolio-img">
+                    <div class="project-placard">
+                        <h3 class="project-title">Photo Gallery</h3>
+                        <p>Easily view and navigate through photos from a recent trip.</p>
+                    </div> 
+                </div>
+                <div class="col">
+                    <img src="images/portfolio-6.png" alt="" class="portfolio-img">
+                    <div class="project-placard" id="last-placard">
+                        <h3 class="project-title">Calculator</h3>
+                        <p>Enter numbers and press the big blue button for the result.</p>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
-            <h2>Rob Anderson</h2>
-            <ul class="footer-nav">
-                <li class="top"><a href="#top">return to top</a></li>
-                <li class="full"><a href="#top">home</a></li>
-                <li class="full"><a href="#portfolio">portfolio</a></li>
-                <li class="full"><a href="#contact">contact</a></li>
-            </ul>
+            <div class="footer-contact" id="contact">
+                <h4 class="section-title">contact</h4>
+                <p>It'd be great to hear from you.</p>
+                <p>Reach out via email or text.</p>
+                <div>
+                    <p class="contact-info">Email &nbsp; <a href="mailto:robotdiatribe@gmail.com">robotdiatribe@gmail.com</a></p>
+                    <p class="contact-info">Text &nbsp; <a href="tel:+14802996965">480.299.6965</a></p>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div>
+                    <h3 id="footer-name">Rob Anderson</h3>
+                </div>
+                <div>
+                    <ul class="footer-nav">
+                        <li class="top"><h4><a href="#top">back to top</a></h4></li>
+                        <li class="full"><a href="#top">home</a></li>
+                        <li class="full"><a href="#skills">skills</a></li>
+                        <li class="full"><a href="#portfolio">portfolio</a></li>
+                        <li class="full"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
