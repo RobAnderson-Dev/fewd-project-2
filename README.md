@@ -1,4 +1,4 @@
-# FEWD Project 2
+# Techdegree Project 2
 
  Front-End Web Development Techdegree Project 2
 
